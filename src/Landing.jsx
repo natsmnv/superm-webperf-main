@@ -18,6 +18,7 @@ export default function Landing() {
                     src="landing.jpg"
                     alt="Display of fruits and vegetables"
                     loading="lazy"
+                    fetchPriority="high"
                 />
             )}
             <p className="tagline text-dimmed">

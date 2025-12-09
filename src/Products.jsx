@@ -2,7 +2,7 @@ import { useState, useTransition } from "react";
 import Product from "./Product";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { get } from "./fetcher";
-import * as _ from "lodash";
+import { toLower } from "lodash/toLower";
 
 export default function Products() {
     const { data: products } = useSuspenseQuery({
@@ -16,7 +16,7 @@ export default function Products() {
     const [filteredProducts, setFilteredProducts] = useState(products);
 
     function handleSearchChange(event) {
-        const searchQuery = _.toLower(event.target.value.trim());
+        const searchQuery = toLower(event.target.value.trim());
         setQuery(searchQuery);
         startTransition(() => {
             setFilteredProducts(
