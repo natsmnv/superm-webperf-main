@@ -17,7 +17,6 @@ export default function Landing() {
                     className="landing-cover"
                     src="landing.jpg"
                     alt="Display of fruits and vegetables"
-                    loading="lazy"
                     fetchPriority="high"
                 />
             )}
