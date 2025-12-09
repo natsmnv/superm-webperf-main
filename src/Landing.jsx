@@ -18,6 +18,8 @@ export default function Landing() {
                     src="landing.jpg"
                     alt="Display of fruits and vegetables"
                     fetchPriority="high"
+                    width="816"
+                    height="352"
                 />
             )}
             <p className="tagline text-dimmed">
